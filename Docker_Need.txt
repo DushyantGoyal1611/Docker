@@ -1,0 +1,21 @@
+Before using Docker, several problems can arise when deploying and running applications across different environments. Here are the key challenges:
+
+1. "It Works on My Machine" Problem
+💡 Issue: The app runs fine on your local machine but fails on another system due to different dependencies, OS versions, or configurations.
+🔧 Docker Solution: Packages everything (code, dependencies, environment) into a container, ensuring consistency across all machines.
+
+2. Dependency Hell
+💡 Issue: Conflicting versions of libraries, frameworks, or packages can break the app when installed on a new system.
+🔧 Docker Solution: Containers have isolated environments, so your app runs with the exact versions it needs.
+
+3. Deployment Inconsistencies
+💡 Issue: The app works in development but crashes in production due to different configurations.
+🔧 Docker Solution: Docker ensures the same setup is used in both development and production.
+
+4. Port Conflicts & Environment Variables
+💡 Issue: Manually setting up ports, environment variables, and dependencies is error-prone and inconsistent.
+🔧 Docker Solution: Uses Docker Compose to define everything in a docker-compose.yml file for easy management.
+
+5. Scaling is Hard
+💡 Issue: Running multiple instances of your app on different machines is complex.
+🔧 Docker Solution: Works with Kubernetes or Docker Swarm to scale easily.
